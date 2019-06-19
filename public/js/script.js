@@ -1,7 +1,7 @@
 function sendMessage(event, socket) {
 	event.preventDefault();
 	let channelName = document.getElementById('channel').value;
-	let msg = document.getElementById('message').value;
+	let message = document.getElementById('message').value;
 	let username = document.getElementById('username').value;
 
 	//Display the Message
@@ -16,7 +16,7 @@ function sendMessage(event, socket) {
 
 	let p = document.createElement('p');
 	p.className = 'card-text';
-	p.innerHTML = `Me : ${msg}`;
+	p.innerHTML = `Me : ${message}`;
 
 	div2.appendChild(p);
 	div1.appendChild(div2);
@@ -25,7 +25,7 @@ function sendMessage(event, socket) {
 	let root = document.getElementById('chatContainer');
 	root.insertBefore(div0, root.firstChild);
 	//Emit Message
-	socket.emit('message', {username:username, channel: channelName, message:msg});
+	socket.emit('message', {username:username, channel: channelName, message:message});
 }
 
 function joinChannel(event, socket) {

@@ -1,27 +1,27 @@
 body {
-	margin-top: 20px;
-	background-color: lightgrey;
+	margin-top: 21px;
+	background-color: 008080;
 }
 
 form {
-	margin: .5rem;
+	margin: .6rem;
 }
 
 form -> label {
-	margin-top: .5rem;
+	margin-top: .6rem;
 }
 
 h4 {
-	margin: .5rem;
+	margin: .6rem;
 }
 
 #chatContainer {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .received-message {
-	background-color: #8AC6D0;
+	background-color: #00FF00;
 }
 .sent-message {
-	background-color: #4DAA57;
+	background-color: #00FFFF;
 }
